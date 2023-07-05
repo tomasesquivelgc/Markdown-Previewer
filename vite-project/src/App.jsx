@@ -1,11 +1,14 @@
 import {  } from 'react'
 import './App.css'
+import TextArea from './components/TextArea'
+import Preview from './components/preview'
 
 function App() {
 
   return (
     <>
-      <h1>Hello world</h1>
+      <TextArea />
+      <Preview />
     </>
   )
 }

@@ -32,7 +32,7 @@
 
 # 📖 Markdown previewer <a name="about-project"></a>
 
-**Markdown previewer** is a simple project that aims to clone [FreeCodeCamp's version](https://markdown-previewer.freecodecamp.rocks). To do this, I have built a page using React (Vite) and copied the CSS to get the same look.
+**Markdown previewer** is a simple project that aims to clone [FreeCodeCamp's version](https://markdown-previewer.freecodecamp.rocks). To do this, I have built a page using React (Vite) and copied the CSS to get the same look. To get the logic done I've used the "marked" library.
 
 ## 🛠 Built With <a name="built-with"></a>
 

@@ -180,3 +180,22 @@ body {
     font-size: 0.875rem;
   }
 }
+
+.Footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.Footer p {
+  margin: 0;
+}
+
+.Footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.Footer a:hover {
+  text-decoration: underline;
+}

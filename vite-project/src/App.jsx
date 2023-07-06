@@ -53,6 +53,14 @@ function App() {
     <>
       <TextArea text={text} setText={setText} />
       <Preview text={text} />
+      <footer className="Footer">
+      <p>
+        View the code on{' '}
+        <a href="https://github.com/tomasesquivelgc/Markdown-Previewer" target="_blank" rel="noopener noreferrer">
+          GitHub
+        </a>
+      </p>
+    </footer>
     </>
   )
 }

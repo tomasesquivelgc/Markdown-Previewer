@@ -1,16 +1,22 @@
-import React from "react";
-import TopBar from "./topBar/TopBar";
+import React from 'react';
+import TopBar from './topBar/TopBar';
+import { marked } from 'marked';
 
-const Preview = () => {
-  return(
+marked.setOptions({
+  mangle: false,
+  headerIds: false,
+  breaks: true,
+});
+
+const Preview = ({ text }) => {
+  const markdownText = React.useMemo(() => marked(text), [text]);
+
+  return (
     <div className="previewWrap">
       <TopBar divName="Preview" />
-      <div id="preview">
-        <h1>Lorem ipsum</h1>
-        <p>Lorem ipsum</p>
-      </div>
+      <div id="preview" dangerouslySetInnerHTML={{ __html: markdownText }}></div>
     </div>
-  )
-}
+  );
+};
 
 export default Preview;
